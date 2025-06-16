@@ -13,7 +13,6 @@ body {
     border-radius: 20px;
     color: black;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
-    margin-bottom: 90px;
     padding: 40px 80px;
 
     position: relative;
@@ -40,6 +39,11 @@ body {
     background-color: #333;
     color:white;
     padding: 1rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 .header a {
@@ -54,16 +58,17 @@ body {
 }
 
 .logo {
-    width: 4em;
+    width: 3em;
 transition: all 0.1s linear;
 }
 
 .logo:hover
 {
-    width: 5em;
+    width: 3.3em;
     pointer-events: painted;
     cursor: pointer;
 }
+
 .navigation ul {
     margin: 0;
 padding: 0;
@@ -83,4 +88,20 @@ list-style: none;
 
 .navigation ul li a:hover{
     background-color: #ccc;
+}
+
+.main {
+    padding-top: 6rem;
+}
+
+.footerMain {
+    text-align: center;
+    color: white;
+    font-size: x-small;
+    margin-top: 80px;
+    position: fixed;
+
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
