@@ -28,8 +28,12 @@ body {
     margin: 0 auto;
     color: white;
     text-align: center;
-    font-size: small;
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subtext {
+    font-size: small;
 }
 
 .header {
@@ -50,8 +54,15 @@ body {
 }
 
 .logo {
-    letter-spacing: 15px;
-    font-size: 1.2em;
+    width: 4em;
+transition: all 0.1s linear;
+}
+
+.logo:hover
+{
+    width: 5em;
+    pointer-events: painted;
+    cursor: pointer;
 }
 .navigation ul {
     margin: 0;
