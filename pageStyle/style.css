@@ -5,6 +5,14 @@ body {
             margin: 0;
         }
 
+.bodyDownloads{
+            background-color: rgb(30, 30, 30);
+            height: 100vh;
+            line-height: 1.6em;
+            margin: 0;
+            padding-top: 80px;
+}
+
        .title {
     display: inline-block;
     font-size: 300%;
@@ -19,7 +27,29 @@ body {
     top: 80px;
 }
 
+.downloadList {
+    color: white;
+    top: 50px;
+    text-align: center;
 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.linkable {
+    text-decoration: none;
+    color: brown;
+transition: all 0.4s linear;
+border-radius: 20px;
+
+margin-top: 90px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+
+.linkable:hover {
+    background-color: antiquewhite;
+}
 
 .container {
     width: 85%;
@@ -35,11 +65,20 @@ body {
     font-size: small;
 }
 
+.comingsoon {
+    font-size: xx-large;
+    padding-top: 90px;
+}
+
+.version {
+    font-size: xx-large;
+}
+
 .header {
     background-color: #333;
     color:white;
     padding: 1rem 0;
-
+z-index: 10;
     position: fixed;
     left: 0;
     top: 0;
