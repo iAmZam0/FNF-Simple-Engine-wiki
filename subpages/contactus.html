@@ -7,9 +7,26 @@
     <script src = '../pageScript/script.js'></script>
   </head>
 
-  <body>
+  <body class="contact">
 
-<header class="header">
+    <main class="main">
+      <div class="container">
+        <p class="subtext">Type Your Message!</p>
+      </div>
+    </main>
+
+    <div class="containerMail">
+    <input type="email" id="email" name="email" placeholder="your email">
+
+    <textarea id="textarea" placeholder="Your Message"></textarea>
+</div>
+
+<div class="botones">
+  <button class="optionsbutton">Send</button>
+  <button class="optionsbutton" onclick="resetearTextarea()">Clear</button>
+</div>
+
+    <header class="header">
       <div class="container logo-nav-container">
         <img src="../images/icon.png" onclick="window.location.href='../index.html'" class="logo" alt="simpleengine alt icon" title="Go back to the title">
           <nav class="navigation">
