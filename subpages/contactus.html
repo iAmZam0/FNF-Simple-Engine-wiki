@@ -5,6 +5,13 @@
     <link rel="icon" type="image/png" href="../images/icon.png">
     <link href = '../pageStyle/style.css' rel = 'styleSheet'>
     <script src = '../pageScript/script.js'></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("service_fptsx6q");
+  })();
+</script>
   </head>
 
   <body class="contact">
@@ -17,14 +24,17 @@
 
     <form action="https://formsubmit.co/amsdev23@gmail.com" method="POST">
       <div class="containerMail">
-        <input class="mail" type="email" name="email" placeholder="your email" required>
-        <textarea name="message" id="textarea" placeholder="Your Message" required></textarea>
+        <input type="email" name="email" placeholder="your email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <input type="file" name="attachment" accept="image/*" placeholder="add image (optional)">
       </div>
 
       <div class="botones">
         <button class="optionsbutton" type="submit">Send</button>
         <button class="optionsbutton" type="reset">Clear</button>
       </div>
+
+      <input type="hidden" name="_subject" value="Simple Engine Wiki User Help">
 
       <input type="text" name="_honey" style="display:none">
     </form>
