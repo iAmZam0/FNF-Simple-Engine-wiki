@@ -15,16 +15,19 @@
       </div>
     </main>
 
-    <div class="containerMail">
-    <input type="email" id="email" name="email" placeholder="your email">
+    <form action="https://formsubmit.co/amsdev23@gmail.com" method="POST">
+      <div class="containerMail">
+        <input class="mail" type="email" name="email" placeholder="your email" required>
+        <textarea name="message" id="textarea" placeholder="Your Message" required></textarea>
+      </div>
 
-    <textarea id="textarea" placeholder="Your Message"></textarea>
-</div>
+      <div class="botones">
+        <button class="optionsbutton" type="submit">Send</button>
+        <button class="optionsbutton" type="reset">Clear</button>
+      </div>
 
-<div class="botones">
-  <button class="optionsbutton">Send</button>
-  <button class="optionsbutton" onclick="resetearTextarea()">Clear</button>
-</div>
+      <input type="text" name="_honey" style="display:none">
+    </form>
 
     <header class="header">
       <div class="container logo-nav-container">
