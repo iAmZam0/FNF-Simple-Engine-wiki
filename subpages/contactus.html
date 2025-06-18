@@ -3,15 +3,27 @@
   <head>
     <title>Simple Engine Wiki</title>
     <link rel="icon" type="image/png" href="../images/icon.png">
-    <link href = '../pageStyle/style.css' rel = 'styleSheet'>
-    <script src = '../pageScript/script.js'></script>
+    <link href="../pageStyle/style.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("Yp9B5u-2aHaXMIKli");
-  })();
-</script>
+    <script>
+      emailjs.init("Yp9B5u-2aHaXMIKli");
+
+      window.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("my-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          emailjs.sendForm("service_fptsx6q", "template_7dvfbbs", this)
+            .then(function () {
+              alert("Correo enviado correctamente!");
+              document.getElementById("my-form").reset();
+            }, function (error) {
+              console.error("Error:", error);
+              alert("Hubo un error al enviar el correo.");
+            });
+        });
+      });
+    </script>
   </head>
 
   <body class="contact">
@@ -25,8 +37,8 @@
     <form id="my-form" enctype="multipart/form-data">
       <div class="containerMail">
         <input type="email" name="email" placeholder="your email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <input type="file" name="attachment" accept="image/*">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="file" name="attachment" accept="image/*">
       </div>
 
       <div class="botones">
@@ -34,20 +46,20 @@
         <button class="optionsbutton" type="reset">Clear</button>
       </div>
 
+      <!-- Anti-spam -->
       <input type="hidden" name="_subject" value="Simple Engine Wiki User Help">
-
       <input type="text" name="_honey" style="display:none">
     </form>
 
     <header class="header">
       <div class="container logo-nav-container">
         <img src="../images/icon.png" onclick="window.location.href='../index.html'" class="logo" alt="simpleengine alt icon" title="Go back to the title">
-          <nav class="navigation">
-            <ul>
+        <nav class="navigation">
+          <ul>
             <li><a href="#" onclick="window.location.href='download.html'">Download 📥</a></li>
             <li><a href="#" onclick="window.location.href='documentation.html'">Documentation 📄</a></li>
           </ul>
-          </nav>
+        </nav>
       </div>
     </header>
 
