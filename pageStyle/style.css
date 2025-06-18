@@ -149,7 +149,7 @@ transition: all 0.1s linear;
 
 .logo:hover
 {
-    width: 3.3em;
+    transform: scale(1.2);
     pointer-events: painted;
     cursor: pointer;
 }

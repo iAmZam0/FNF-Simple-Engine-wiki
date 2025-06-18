@@ -1,4 +1,4 @@
-function resetearTextarea() {
+/*function resetTextarea() {
     document.getElementById("textarea").value = "";
-  }
+  }*/
 
