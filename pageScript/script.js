@@ -2,13 +2,12 @@ function resetearTextarea() {
     document.getElementById("textarea").value = "";
   }
 
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
+emailjs.init("Yp9B5u-2aHaXMIKli");
 
-  emailjs.sendForm('service_fptsx6q', 'template_7dvfbbs', this)
-    .then(function() {
-      alert('Correo enviado con éxito!');
-    }, function(error) {
-      alert('Error al enviar: ' + JSON.stringify(error));
-    });
-});
+  document.getElementById("my-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_fptsx6q", "template_7dvfbbs", this)
+      .then(() => alert("Correo enviado correctamente"), 
+            (err) => alert("Error: " + JSON.stringify(err)));
+  });
