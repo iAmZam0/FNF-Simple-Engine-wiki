@@ -52,6 +52,7 @@ textarea {
   font-size: x-large;
   transition: all 0.2s ease;
   padding: 5px 20px;
+  z-index: 10;
 }
 
 .optionsbutton:hover {
@@ -188,6 +189,7 @@ list-style: none;
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 9;
 }
 
 input[type='email'] {
